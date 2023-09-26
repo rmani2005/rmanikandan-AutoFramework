@@ -1,0 +1,16 @@
+[
+	{
+		"employee": {
+			"firstName": "Manikandan",
+			"lastName": "Ravi",
+			"website": "meanmodeMani.com"
+		}
+	},
+	{
+		"employee": {
+			"firstName": "Brian",
+			"lastName": "Schultz",
+			"website": "example.com"
+		}
+	}
+]

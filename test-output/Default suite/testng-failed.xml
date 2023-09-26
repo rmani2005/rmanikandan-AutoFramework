@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.PageObjectModel">
+      <class name="POMFramework.test.POMTestCNBC">
         <methods>
+          <include name="TC1_AssertEquals"/>
           <include name="tearDown"/>
+          <include name="secondTC"/>
           <include name="beforeTestCondif"/>
-          <include name="firstTC"/>
         </methods>
-      </class> <!-- test.PageObjectModel -->
+      </class> <!-- POMFramework.test.POMTestCNBC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

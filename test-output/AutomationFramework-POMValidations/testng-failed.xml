@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationFramework-POMValidations]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="appURL" value="http://www.google.com/"/>
+  <listeners>
+    <listener class-name="POMFramework.BaseClass.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="POMValidations(failed)">
+    <classes>
+      <class name="POMFramework.test.POMValidations">
+        <methods>
+          <include name="TC5_AssertNull"/>
+          <include name="TC7_SoftAssert"/>
+          <include name="tearDown"/>
+          <include name="TC2_AssertNotEquals"/>
+          <include name="beforeTestCondif"/>
+          <include name="TC4_AssertFalse"/>
+        </methods>
+      </class> <!-- POMFramework.test.POMValidations -->
+    </classes>
+  </test> <!-- POMValidations(failed) -->
+</suite> <!-- Failed suite [AutomationFramework-POMValidations] -->

@@ -4,6 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+
+    <parent>
+        <groupId>com.intuit.karate</groupId>
+        <artifactId>karate-parent</artifactId>
+        <version>1.4.0</version>
+    </parent>
+    
+
   <groupId>com.AutoFramework</groupId>
   <artifactId>BasicAutomationFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -18,7 +26,53 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+ <repositories>
+ <repository>
+	<id>GroupDocsJavaAPI</id>
+	<name>GroupDocs Java API</name>
+	<url>http://repository.groupdocs.com/repo/</url>
+</repository>
+  </repositories>
+
   <dependencies>
+
+
+<dependency>
+  <groupId>com.intuit.karate</groupId>
+  <artifactId>karate-core</artifactId>
+  <version>1.4.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
+<dependency>
+    <groupId>com.intuit.karate</groupId>
+    <artifactId>karate-junit5</artifactId>
+    <version>1.4.0</version>
+</dependency>
+ 
+<dependency>
+    <groupId>de.redsix</groupId>
+    <artifactId>pdfcompare</artifactId>
+    <version>1.1.61</version>
+</dependency>
+ <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+</dependency>
+
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.3.3</version>
+</dependency>
+
+  <!--
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
@@ -31,6 +85,23 @@
       <version>5.7.1</version>
       <scope>test</scope>
     </dependency>
+    -->
+    
+     <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-apache -->
+<dependency>
+    <groupId>com.intuit.karate</groupId>
+    <artifactId>karate-apache</artifactId>
+    <version>0.9.6</version>
+    <scope>test</scope>
+</dependency>
+
+
+    <dependency>
+        <groupId>com.intuit.karate</groupId>
+        <artifactId>karate-junit5</artifactId>
+        <version>0.9.6</version>
+        <scope>test</scope>
+    </dependency>
     
     <dependency>
   <groupId>org.testng</groupId>
@@ -38,26 +109,119 @@
   <version>7.6.0</version>
   <scope>test</scope>
 </dependency>
-    <dependency>
+ <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.1.4</version>
+    <version>4.9.0</version>
 </dependency>
    <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-remote-driver</artifactId>
-    <version>4.1.4</version>
+    <version>4.9.0</version>
 </dependency>
     
+    <dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.21.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.qameta.allure</groupId>
+	    <artifactId>allure-java-commons</artifactId>
+	    <version>2.21.0</version>
+	</dependency>
+
+<!-- Reporting -->
+<dependency>
+	<groupId>com.aventstack</groupId>
+	<artifactId>extentreports</artifactId>
+	<version>3.1.5</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.16</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.12.1</version>
+</dependency>
+
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+	
+	<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.12.1</version>
+		</dependency>	
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.12.1</version>
+		</dependency>
+	
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>gherkin</artifactId>
+	    <version>26.2.0</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.xml.parsers/jaxp-api -->
+<dependency>
+    <groupId>javax.xml.parsers</groupId>
+    <artifactId>jaxp-api</artifactId>
+    <version>1.4.5</version>
+</dependency>
+
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
   </dependencies>
 
   <build>
+
+  <!--  <testResources>
+        <testResource>
+            <directory>src/test/java</directory>
+            <excludes>
+                <exclude>**/*.java</exclude>
+            </excludes>
+        </testResource>
+    </testResources>        -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
-      </plugin>
+         <configuration>
+			 <suiteXmlFiles>
+                     <suiteXmlFile>src/testng-parallel.xml</suiteXmlFile>
+                  </suiteXmlFiles>
+			    </configuration>
+			      </plugin>
+			      <plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.9</version>
+			</plugin>
     </plugins>
   </build>
+  
+  
 </project>
