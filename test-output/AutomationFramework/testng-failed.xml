@@ -2,10 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AutomationFramework]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <parameter name="appURL" value="http://www.google.com/"/>
-  <listeners>
-    <listener class-name="POMFramework.BaseClass.TestListener"/>
-  </listeners>
+  <parameter name="appURL" value="https://www.google.com/"/>
   <test thread-count="5" name="CNBC Test(failed)">
     <classes>
       <class name="POMFramework.test.POMTestCNBC">
