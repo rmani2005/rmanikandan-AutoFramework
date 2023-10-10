@@ -213,7 +213,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/testng-parallel.xml</suiteXmlFile>
+						<suiteXmlFile>testng-parallel.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 				</configuration>
