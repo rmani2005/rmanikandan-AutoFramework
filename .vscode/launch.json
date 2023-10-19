@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "WriteJSONExample",
+            "request": "launch",
+            "mainClass": "POMFramework.BaseClass.WriteJSONExample",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "CopyFilesChunk",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.CopyFilesChunk",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "CopyFilesOne",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.CopyFilesOne",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "SHA256",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.SHA256",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "TestAbstraction1",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.TestAbstraction1",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "TestBank",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.TestBank",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "abstractionCheck",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.abstractionCheck",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "excelCreationLinux",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.excelCreationLinux",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "fileReadings",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.fileReadings",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "gcd",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.gcd",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "helloworld",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.helloworld",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "interfaceInheritance2",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.interfaceInheritance2",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "interfaceInheritanceIdentifier",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.interfaceInheritanceIdentifier",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "reverseword",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.reverseword",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "serailizaion",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.serailizaion",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "thiskeyword",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.thiskeyword",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "tripletOfVoewels",
+            "request": "launch",
+            "mainClass": "javaProgramPackage.tripletOfVoewels",
+            "projectName": "BasicAutomationFramework"
+        },
+        {
+            "type": "java",
+            "name": "tempPlaceHolder",
+            "request": "launch",
+            "mainClass": "utilities.tempPlaceHolder",
+            "projectName": "BasicAutomationFramework"
+        }
+    ]
+}
